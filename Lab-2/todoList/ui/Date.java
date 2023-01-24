@@ -5,8 +5,6 @@ public class Date {
     int month;
     int day;
 
-
-
     boolean valid = false;
 
     //Constructors
@@ -18,27 +16,17 @@ public class Date {
             this.day = day;
             this.valid = true;
         }
-        else System.out.println("Invalid Date");
     }
 
     //Getters
-    public int getYear() {
-        return year;
-    }
-    public int getMonth() {
-        return month;
-    }
-    public int getDay() {
-        return day;
-    }
-    public boolean isValid() {
-        return valid;
-    }
+    public int getYear() {return year;}
+    public int getMonth() {return month;}
+    public int getDay() {return day;}
+    public boolean isValid() {return valid;}
 
 
     //ToString Method
     public String toString(){
-
         String dateString = switch (day) {
             case (1) -> "1st of";
             case (2) -> "2nd of";
