@@ -1,11 +1,8 @@
 package ui;
 
-import java.util.ArrayList;
-
 public class Main {
     public static void main(String[] args) {
-        ArrayList <Task> taskList = new ArrayList<>();
-        new uiNavigator(taskList).mainMenu();
+        new uiNavigator().mainMenu();
     }
 }
 
@@ -17,6 +14,10 @@ Rewrite Date class using java.time
     - Week day, time of day, etc.
     - Allow for a single yyyy/mm/dd input
 
+Check for overdue Tasks
+    - Notify user when a task is overdue
+    - Create list of overdue tasks
+
 Optional Task Constructors
     - Time of day + range ex (14:00) or (14:00 - 15:00)
     - Location
@@ -25,14 +26,6 @@ Optional Task Constructors
 
 Search function
     - Finds tasks that satisfy parameters (ex. name, date, location)
-
-Check for overdue Tasks
-    - Notify user when a task is overdue
-    - Create list of overdue tasks
-
-Create finishedTaskList
-    - Tasks are sent here from taskList instead of deleted
-    - Remove items from finishedTaskList to delete them
 
 Store entered tasks in .dat file
     - Tasks are stored while program is closed
