@@ -1,0 +1,14 @@
+package ui;
+
+import java.time.*;
+
+public class Date {
+    LocalDate currentDate = LocalDate.now();
+    Year year;
+    Month month;
+    MonthDay day;
+    DayOfWeek weekDay;
+    Time time;
+
+}
+
